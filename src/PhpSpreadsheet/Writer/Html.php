@@ -1026,6 +1026,7 @@ class Html extends BaseWriter
                 $css['padding-' . $textAlign] = (string) ((int) $pStyle->getIndent() * 9) . 'px';
             }
         }
+        $css['text-rotate'] = $pStyle->getTextRotation();
 
         return $css;
     }
